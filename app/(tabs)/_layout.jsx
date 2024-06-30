@@ -90,7 +90,7 @@ export default function TabLayout() {
     </View> */}
 
       {/* Pressable component */}
-      <View style={{ flex: 1, padding: 60 }}>
+      {/* <View style={{ flex: 1, padding: 60 }}>
         <Pressable
           onPress={() => alert("I love India")}
           onLongPress={() => alert("Loving India too much")}
@@ -102,7 +102,7 @@ export default function TabLayout() {
             style={{ width: 200, height: 150 }}
           />
         </Pressable>
-      </View>
+      </View> */}
 
       {/* Pressable component */}
       {/* <View style={{flex:1, padding: 60}}>
