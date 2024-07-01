@@ -126,10 +126,10 @@ export default function TabLayout() {
     </View> */}
 
       {/* ActivityIndicator component */}
-      {/* <View style={{flex:1, padding: 60}}>
+      <View style={{flex:1, padding: 60}}>
         <Button title='Show Loading' onPress={foractivity} color="midnightblue" />
         <ActivityIndicator size='large' color='midnightblue' animating={activityInd} />
-    </View> */}
+    </View>
 
       {/* Alert component */}
       <View style={{ flex: 1, padding: 60 }}>
