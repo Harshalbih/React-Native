@@ -39,7 +39,7 @@ export default function HomeScreen() {
 
       {/* Text component */}
       <View style={{flex:1, backgroundColor:'gray'}}>
-        <Text>India Won Today!</Text>
+        <Text>India Won Today!!!</Text>
     </View>
 
       {/* Image component */}
