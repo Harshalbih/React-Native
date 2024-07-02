@@ -13,6 +13,8 @@ import {
 import React from "react";
 const logo = require("../../assets/images/react-logo.png");
 import { useState } from "react";
+import Greet from "../../components/Greet";
+import StyleRN from "../../components/stylesheetRN";
 
 export default function HomeScreen() {
   const [modalVisible, setModalVisible] = useState(false); //for Modal
@@ -108,7 +110,7 @@ export default function HomeScreen() {
     </View>
 
       {/* Alert component */}
-      <View style={{ flex: 1, padding: 60 }}>
+      {/* <View style={{ flex: 1, padding: 60 }}>
         <Button
           title="Show Alert"
           color="midnightblue"
@@ -119,6 +121,16 @@ export default function HomeScreen() {
             ])
           }
         />
+      </View> */}
+
+      {/* Custom Component */}
+        <Greet name='Harshal' />
+        <Greet name='Bihade' />
+
+
+       {/* StyleSheets */}
+       <View>
+        <StyleRN />
       </View>
     </>
   );
