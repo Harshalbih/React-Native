@@ -30,6 +30,8 @@ export default function HomeScreen() {
 
   return (
     <>
+    <View style={{flex:1, padding: 20}}>
+    <ScrollView>
       {/* Tabs section  */}
       
 
@@ -132,6 +134,9 @@ export default function HomeScreen() {
        <View>
         <StyleRN />
       </View>
+
+      </ScrollView>
+    </View>
     </>
   );
 }
