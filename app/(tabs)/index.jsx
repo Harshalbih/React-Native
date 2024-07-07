@@ -9,6 +9,7 @@ import {
   StatusBar,
   ActivityIndicator,
   Alert,
+  SafeAreaView
 } from "react-native";
 import React from "react";
 const logo = require("../../assets/images/react-logo.png");
@@ -33,14 +34,16 @@ export default function HomeScreen() {
     <>
     <View style={{flex:1, padding: 20}}>
       <ScrollView>
+      <SafeAreaView>
           {/* Tabs section  */}
           
 
           {/* View component */}
-          {/* <View style={{flex:1, backgroundColor:'gray'}}>
+          <View style={{flex:1, backgroundColor:'gray'}}>
             <View style={{width:200, height:200, backgroundColor:'green'}}>
+            <Text> View component</Text>
             </View>
-        </View> */}
+        </View>
 
           {/* Text component */}
           <View style={{flex:1, backgroundColor:'gray'}}>
@@ -48,10 +51,11 @@ export default function HomeScreen() {
         </View>
 
           {/* Image component */}
-          {/* <View style={{flex:1, padding: 100}}>
+          <View style={{flex:1, padding: 100}}>
+          <Text>Image Component</Text>
             <Image source ={logo} style={{width:100, height:100}} />
             <Image source ={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FzNowL5xtyLe4hajNtegzUtYhvrtfhnzkg&s"}} style={{width:200, height:150}} />
-        </View> */}
+        </View>
 
           {/* Scroll component */}
           {/* <View style={{flex:1, padding: 60}}>
@@ -66,12 +70,14 @@ export default function HomeScreen() {
         </View> */}
 
           {/* Button component */}
-          {/* <View style={{flex:1, padding: 60}}>
+          <View style={{flex:1, padding: 60}}>
+          <Text>Button Component</Text>
             <Button title='Click Here' onPress={()=> alert("Button pressed")} color="midnightblue" />
-        </View> */}
+        </View>
 
           {/* Pressable component */}
           <View style={{ flex: 1, padding: 60 }}>
+          <Text>Pressable component</Text>
             <Pressable
               onPress={() => alert("I love India")}
               onLongPress={() => alert("Loving India too much")}
@@ -85,8 +91,9 @@ export default function HomeScreen() {
             </Pressable>
           </View>
 
-          {/* Pressable component */}
-          {/* <View style={{flex:1, padding: 60}}>
+          {/* Modal component */}
+          <View style={{flex:1, padding: 60}}>
+            <Text>Modal Component</Text>
             <Button title='Open Modal' onPress={()=> setModalVisible(true)} color="midnightblue" />
 
             <Modal visible={modalVisible} 
@@ -94,17 +101,18 @@ export default function HomeScreen() {
             animationType='fade'
             >
                 <View style={{backgroundColor: 'lightblue', height:300, width:300, padding:100}}>
-                    <Text>Model Content</Text>
+                    <Text>Modal Content</Text>
                     <Button title='Close Modal' onPress={()=>setModalVisible(false)} color="red"/>
                 </View>
             </Modal>
-        </View> */}
+        </View>
 
           {/* StatusBar component */}
-          {/* <View style={{flex:1, padding: 60}}>
+          <View style={{flex:1, padding: 60}}>
+            <Text>StatusBar Component</Text>
             <Button title='Full Screen' onPress={()=> setNotificationBar(!notificationBar)} color="midnightblue" />
             <StatusBar barStyle='dark-content' backgroundColor='lightgreen' hidden={notificationBar}/>
-        </View> */}
+        </View>
 
           {/* ActivityIndicator component */}
           <View style={{flex:1, padding: 60}}>
@@ -113,7 +121,8 @@ export default function HomeScreen() {
         </View>
 
           {/* Alert component */}
-          {/* <View style={{ flex: 1, padding: 60 }}>
+          <View style={{ flex: 1, padding: 60 }}>
+            <Text>Alert Component</Text>
             <Button
               title="Show Alert"
               color="midnightblue"
@@ -124,7 +133,7 @@ export default function HomeScreen() {
                 ])
               }
             />
-          </View> */}
+          </View>
 
           {/* Custom Component */}
             <Greet name='Harshal' />
@@ -141,6 +150,12 @@ export default function HomeScreen() {
             <Dimensionapi />
           </View>
 
+          {/* List */}
+          <View>
+            <List />
+          </View>
+          
+      </SafeAreaView>
       </ScrollView>
     </View>
     </>
