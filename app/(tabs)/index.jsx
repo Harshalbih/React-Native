@@ -9,7 +9,7 @@ import {
   StatusBar,
   ActivityIndicator,
   Alert,
-  SafeAreaView
+  SafeAreaView,
 } from "react-native";
 import React from "react";
 const logo = require("../../assets/images/react-logo.png");
@@ -17,6 +17,7 @@ import { useState } from "react";
 import Greet from "../../components/Greet";
 import StyleRN from "../../components/stylesheetRN";
 import Dimensionapi from "../../components/dimesionsapi";
+
 
 export default function HomeScreen() {
   const [modalVisible, setModalVisible] = useState(false); //for Modal
@@ -151,9 +152,7 @@ export default function HomeScreen() {
           </View>
 
           {/* List */}
-          <View>
-            <List />
-          </View>
+          
           
       </SafeAreaView>
       </ScrollView>
