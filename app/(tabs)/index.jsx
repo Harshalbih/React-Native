@@ -151,7 +151,7 @@ export default function HomeScreen() {
             <Dimensionapi />
           </View>
 
-          {/* List */}
+          {/*List*/}
           
           
       </SafeAreaView>
